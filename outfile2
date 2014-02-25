@@ -1,0 +1,305 @@
+Script started on Tue 18 Feb 2014 12:24:55 AM CST
+]0;samgooi4189@primeX: ~/dev/cs369/chapter4samgooi4189@primeX:~/dev/cs369/chapter4$ rails c
+Loading development environment (Rails 4.0.2)
+2.0.0-p353 :001 > ''[K[K""f"o"o" "b"a"r" " " " " " "b"z"[1P"a"z"[Cspl[K[K[K.split    #Split a string into a three-element array
+ => ["foo", "bar", "baz"] 
+2.0.0-p353 :002 > ""f"o"o"x"b"a"r"x"b"a"z"x"[C.split()')')x')[C[C
+ => ["foo", "bar", "baz"] 
+2.0.0-p353 :003 > a = []4]2],] ]8],] ]1]7]
+ => [42, 8, 17] 
+2.0.0-p353 :004 > a[]0]
+ => 42 
+2.0.0-p353 :005 > a[]1]
+ => 8 
+2.0.0-p353 :006 > a[]2]
+ => 17 
+2.0.0-p353 :007 > a[2][1P]-]1]
+ => 17 
+2.0.0-p353 :008 > a[-1]    # Inde[Kices can be [K[K[Keven be negatives!
+ => 17 
+2.0.0-p353 :009 > a[-1]    # Indices can even be negatives![C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[]0][C     # Ruby uses square brakets [K[K[K[K[Kckets for array access
+ => 42 
+2.0.0-p353 :010 > a [K
+ => [42, 8, 17] 
+2.0.0-p353 :011 > a          [K[K[K# Just a reminder of what a[K''a'[C is
+ => [42, 8, 17] 
+2.0.0-p353 :012 > a.first
+ => 42 
+2.0.0-p353 :013 > a [K.sce[K[Kecond
+ => 8 
+2.0.0-p353 :014 > a.last
+ => 17 
+2.0.0-p353 :015 > a.last = [K= a[]-]1][C     #COmpare[K[K[K[K[K[Komparing using ==
+ => true 
+2.0.0-p353 :016 > x = a.length
+ => 3 
+2.0.0-p353 :017 > x == 3
+ => true 
+2.0.0-p353 :018 > x == 3 a.length     # li[K[KLike strings, arras[Kys respond to the ;;[K[K''l'e'n'g't'h'[C method
+ => 3 
+2.0.0-p353 :019 > x == 1
+ => false 
+2.0.0-p353 :020 > x != 1
+ => true 
+2.0.0-p353 :021 > x != 1[1P[1@>
+ => true 
+2.0.0-p353 :022 > x >= 1[1P 1[1P 1< 1
+ => false 
+2.0.0-p353 :023 > a
+ => [42, 8, 17] 
+2.0.0-p353 :024 > a sort[K[K[K[K[K.sort
+ => [8, 17, 42] 
+2.0.0-p353 :025 > a.reversr[Ke
+ => [17, 8, 42] 
+2.0.0-p353 :026 > a.shuffle
+ => [17, 8, 42] 
+2.0.0-p353 :027 > a
+ => [42, 8, 17] 
+2.0.0-p353 :028 > s
+NameError: undefined local variable or method `s' for main:Object
+	from (irb):28
+	from /home/samgooi4189/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/railties-4.0.2/lib/rails/commands/console.rb:90:in `start'
+	from /home/samgooi4189/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/railties-4.0.2/lib/rails/commands/console.rb:9:in `start'
+	from /home/samgooi4189/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/railties-4.0.2/lib/rails/commands.rb:62:in `<top (required)>'
+	from bin/rails:4:in `require'
+	from bin/rails:4:in `<main>'
+2.0.0-p353 :029 > s[Ka
+ => [42, 8, 17] 
+2.0.0-p353 :030 > a/sjo[K[K[K[K.sort
+ => [8, 17, 42] 
+2.0.0-p353 :031 > a.sort!
+ => [8, 17, 42] 
+2.0.0-p353 :032 > a
+ => [8, 17, 42] 
+2.0.0-p353 :033 > a.push()6)
+ => [8, 17, 42, 6] 
+2.0.0-p353 :034 > a<< [1@ [C[C[C7
+ => [8, 17, 42, 6, 7] 
+2.0.0-p353 :035 > a = []4]1][1P]2],] ]8],]1]7],] ]6] ],][1P][1P],] ]7][1@ [C[C
+ => [42, 8, 17, 6, 7] 
+2.0.0-p353 :036 > a<< ""f"o"o"[C << ""a"b"[1P"[1P"b"a"r"
+ => [42, 8, 17, 6, 7, "foo", "bar"] 
+2.0.0-p353 :037 > a
+ => [42, 8, 17, 6, 7, "foo", "bar"] 
+2.0.0-p353 :038 > a.join    #join on nothing
+ => "4281767foobar" 
+2.0.0-p353 :039 > a.joing[K()')'),') ')[C[C  #join on comman[K-space
+ => "42, 8, 17, 6, 7, foo, bar" 
+2.0.0-p353 :040 > 0..0[K9
+ => 0..9 
+2.0.0-p353 :041 > 0.99 to_a[1Pto_a.to_a[C[C[C[1P.to_a.9.to_a
+NoMethodError: undefined method `to_a' for 9:Fixnum
+	from (irb):41
+	from /home/samgooi4189/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/railties-4.0.2/lib/rails/commands/console.rb:90:in `start'
+	from /home/samgooi4189/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/railties-4.0.2/lib/rails/commands/console.rb:9:in `start'
+	from /home/samgooi4189/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/railties-4.0.2/lib/rails/commands.rb:62:in `<top (required)>'
+	from bin/rails:4:in `require'
+	from bin/rails:4:in `<main>'
+2.0.0-p353 :042 > ()0).).)9)[C.tp [K[Ko [K_a      #Op[Kops, call to_a on 9.
+ => [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] 
+2.0.0-p353 :043 > (0..9).to_a      #Oops, call to_a on 9.[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C0..9.to_a[K(0..9).to_a      #Oops, call to_a on 9.[C[1P[1P
+NoMethodError: undefined method `to_a' for 9:Fixnum
+	from (irb):43
+	from /home/samgooi4189/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/railties-4.0.2/lib/rails/commands/console.rb:90:in `start'
+	from /home/samgooi4189/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/railties-4.0.2/lib/rails/commands/console.rb:9:in `start'
+	from /home/samgooi4189/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/railties-4.0.2/lib/rails/commands.rb:62:in `<top (required)>'
+	from bin/rails:4:in `require'
+	from bin/rails:4:in `<main>'
+2.0.0-p353 :044 > 0..9.to_a      #Oops, call to_a on 9.[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[2@(0..9)[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[KIs[K[KUse para[Kentheses[K[Kis[K[Kes o[Kto call to [K_a on the range.
+ => [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] 
+2.0.0-p353 :045 > a = ()0).).)9)[C.to_a
+ => [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] 
+2.0.0-p353 :046 > a[]2].].](])]a)].)]l)]e)]n)]g)]t)]h)]-)]1)][C[C    #Explicitly use the array;s length[K[K[K[K[K[K[K[K[K's leg[Kngth
+ => [2, 3, 4, 5, 6, 7, 8, 9] 
+2.0.0-p353 :047 > a[]2].].]1][1P]-]1][C    $[K#use the index -1 trick
+ => [2, 3, 4, 5, 6, 7, 8, 9] 
+2.0.0-p353 :048 > ()')')1')[1P')a')[C.).)')')e')[C[C.to_a
+ => ["a", "b", "c", "d", "e"] 
+2.0.0-p353 :049 > ()1).).)5)[C.each{}[C}[C}i}}[C[1P}}[C[K[1P}}[C[K{} }|}|}i|}[C }p}u}t}s} }2}*} *}[C }i}
+2
+4
+6
+8
+10
+ => 1..5 
+2.0.0-p353 :050 > ()1).).)5)[C.each dp[Ko \\i\[C[K[K[K\\[K[K||i|[C
+2.0.0-p353 :051 >     puts 2*i
+2.0.0-p353 :052?>   end
+2
+4
+6
+8
+10
+ => 1..5 
+2.0.0-p353 :053 > ()1).).)5)[C.each f[Kdo ||n|u|m|b|e|r|[C
+2.0.0-p353 :054 >     puts 2* number
+2.0.0-p353 :055?>   puts ''-'-'[C
+2.0.0-p353 :056?>   end
+2
+--
+4
+--
+6
+--
+8
+--
+10
+--
+ => 1..5 
+2.0.0-p353 :057 > 3.times [K {}p}u}t}s} }[1P}"}"} ""}[CB"}e"}t"}e"}l"}g"}e"}u"}s"}e"}!"}[C[C   # 3.times takes a block with a [K[Kno variables.
+Betelgeuse!
+Betelgeuse!
+Betelgeuse!
+ => 3 
+2.0.0-p353 :058 > ()1).).)5)[C.map()[C[K[K{} }\}\}i\}[C[1P}[1P}[1P}|}|}i|}[C }i}*}2}[C
+ => [2, 4, 6, 8, 10] 
+2.0.0-p353 :059 > (1..5).map{ |i| i*2}*2}[C[C   # the ** notation is for ''p'o'e'r'[1P'[1P'w'e'r'
+ => [1, 4, 9, 16, 25] 
+2.0.0-p353 :060 > (1..5).map{ |i| i**2}   # the ** notation is for 'power'[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K%w[]1] ]b] ][1P][1P][1P][1P]a] ]b]c] ][1P][1P] ]c]
+ => ["a", "b", "c"] 
+2.0.0-p353 :061 > %w[a b c].map{}\}\}[C[1P}[1P}|}|}c|}a|}h|}r|}[1P|}[1P|}[1P|}h|}a|}r|}[C }c}h}a}r}.}u}p}c}a}s}e}
+ => ["A", "B", "C"] 
+2.0.0-p353 :062 > %w[a b c].map{|char| char.upcase}[1P}[1P}[1P}[1P}[1P}[1P}d}o}w}n}c}a}s}e}
+ => ["a", "b", "c"] 
+2.0.0-p353 :063 > %w[a b c].map{|char| char.downcase}[2Pupcase}[K                # [Krecalls [K[K that $w makes string arrays
+ => ["a", "b", "c"] 
+2.0.0-p353 :064 > ()')')a)[1P)a')[C.).)')')z')[C[C.to_a.shuffle[]0].].]7][C.join
+ => "ioejdqnh" 
+2.0.0-p353 :065 > ('a'..'z').to_a.shuffle[0..7].join[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K          # An alphabeth[K array
+ => ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"] 
+2.0.0-p353 :066 > ('a'..'z').to_a          # An alphabet array[1@.[1@s[1@h[1@u[1@f[1@f[1@l[1@e[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1Py[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kshuffle ir[Kt
+ => ["b", "a", "s", "w", "j", "y", "u", "l", "m", "v", "o", "e", "z", "p", "c", "g", "q", "n", "f", "x", "i", "h", "k", "r", "d", "t"] 
+2.0.0-p353 :067 > ('a'..'z').to_a.shuffle          # shuffle it[1@[[1@][1@0[1@.[1@.[1@7[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[Kpull out the first 8 [K[Keiht[K[Kght elements
+ => ["i", "b", "z", "y", "j", "p", "m", "k"] 
+2.0.0-p353 :068 > ('a'..'z').to_a.shuffle[0..7]          #pull out the first eight elements[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K.join    #join them together to make one strn[Kong[K[K[Kng[K[King
+ => "nxedfjok" 
+2.0.0-p353 :069 > user = {}               # {}i}[1P}[C is an empty hash
+ => {} 
+2.0.0-p353 :070 > i[Kuser [K[]"]"]f"]i"]r"]s"]t"]_"]n"]a"]m"]e"][C[C = ""M"I"c"h"a"[1P"[1P"[1P"[1P"i"c"h"a"e"l"[C         #Ke [Ky ""f"i"r"s"t"n"a"m"e"_name"[C[C[C[C[C, value ""M"i"c"h"a"e"l"[C
+ => "Michael" 
+2.0.0-p353 :071 > usr[Ker[]"]"]l"]a"]s"]t"]_"]n"]a"]m"]e"][C[C = ::[C[K[K""H"a"r"t"l"[C            #Kaye[K[K[Key ""l"a"s"t" "n"[1P"[1P"_"n"a"m"e"[C, value ""H"a"r"t"l"
+ => "Hartl" 
+2.0.0-p353 :072 > user["last_name"] = "Hartl"            #Key "last_name", value "Hartl"[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[KElement access is like arrays[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[1P[1P[1P[1P[1P[1P[1P[C[C[C[C[C[C[C[C[C[C[1P[1P[C[C[C[C[C[C[C[C[C[C[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1@f[1@i[1@r[1@s[1@t[1@_[1@n[1@a[1@m[1@e[1@"[1@]
+ => "Michael" 
+2.0.0-p353 :073 > usr[Ker
+ => {"first_name"=>"Michael", "last_name"=>"Hartl"} 
+2.0.0-p353 :074 > 
+]0;samgooi4189@primeX: ~/dev/cs369/chapter4samgooi4189@primeX:~/dev/cs369/chapter4$ script 2.6[K[K[K4.6E[KExercise
+Script started, file is 4.6Exercise
+]0;samgooi4189@primeX: ~/dev/cs369/chapter4samgooi4189@primeX:~/dev/cs369/chapter4$ rails c
+Loading development environment (Rails 4.0.2)
+2.0.0-p353 :001 > deg[Kf string_suffle[K[K[K[K[Khuffle()s)
+2.0.0-p353 :002?>   s.split()')')[C.shuffle.join![K
+2.0.0-p353 :003?>   end
+ => nil 
+2.0.0-p353 :004 > string_shuffle()")")f")o")o")b")a")r")
+ => "roabof" 
+2.0.0-p353 :005 > class String
+2.0.0-p353 :006?>   def shuffle
+2.0.0-p353 :007?>     self.split()')')[C.shuffle.joing[K![K
+2.0.0-p353 :008?>     end
+2.0.0-p353 :009?>   end
+ => nil 
+2.0.0-p353 :010 > ""f"o"o"b"a"r"[C.shuffle
+ => "raofbo" 
+2.0.0-p353 :011 > person1 = {}f}i}r}s}t}_}n}a}m}e}[1P}[1P}[1P}[1P}[1P} first}:first}[C[C[C[C[C }=} }A}l}a}n},} }:}l}a}s}t} }=} }O}n}e}[C
+SyntaxError: (irb):11: syntax error, unexpected '=', expecting =>
+person1 = { :first = Alan, :last = One}
+                    ^
+(irb):11: syntax error, unexpected '=', expecting :: or '[' or '.'
+person1 = { :first = Alan, :last = One}
+                                  ^
+	from /home/samgooi4189/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/railties-4.0.2/lib/rails/commands/console.rb:90:in `start'
+	from /home/samgooi4189/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/railties-4.0.2/lib/rails/commands/console.rb:9:in `start'
+	from /home/samgooi4189/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/railties-4.0.2/lib/rails/commands.rb:62:in `<top (required)>'
+	from bin/rails:4:in `require'
+	from bin/rails:4:in `<main>'
+2.0.0-p353 :012 > person1 = { :first = Alan, :last = One}[C[1@'[1@'[C[1P[C[C[C[C[1@'[C[C[C[C[C[C[C[C[C[C'One}[C[C[C'}
+SyntaxError: (irb):12: syntax error, unexpected '=', expecting =>
+person1 = { :first = 'Alan', :last = 'One'}
+                    ^
+(irb):12: syntax error, unexpected ',', expecting end-of-input
+person1 = { :first = 'Alan', :last = 'One'}
+                            ^
+	from /home/samgooi4189/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/railties-4.0.2/lib/rails/commands/console.rb:90:in `start'
+	from /home/samgooi4189/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/railties-4.0.2/lib/rails/commands/console.rb:9:in `start'
+	from /home/samgooi4189/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/railties-4.0.2/lib/rails/commands.rb:62:in `<top (required)>'
+	from bin/rails:4:in `require'
+	from bin/rails:4:in `<main>'
+2.0.0-p353 :013 > person1 = { :first = 'Alan', :last = 'One'}[1@>[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C> 'One'}
+ => {:first=>"Alan", :last=>"One"} 
+2.0.0-p353 :014 > person2[]']']f']i']s'][1P']r']s']t'][C[C = N[K''B'e't'a'
+NameError: undefined local variable or method `person2' for main:Object
+	from (irb):14
+	from /home/samgooi4189/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/railties-4.0.2/lib/rails/commands/console.rb:90:in `start'
+	from /home/samgooi4189/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/railties-4.0.2/lib/rails/commands/console.rb:9:in `start'
+	from /home/samgooi4189/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/railties-4.0.2/lib/rails/commands.rb:62:in `<top (required)>'
+	from bin/rails:4:in `require'
+	from bin/rails:4:in `<main>'
+2.0.0-p353 :015 > person2['first'] = 'Beta'1 = { :first => 'Alan', :last => 'One'}[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[20P2['first'] = 'Beta'[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K = {}
+ => {} 
+2.0.0-p353 :016 > person2[]']']e'][1P']b']e']t']a'][C[C = ''[K[K[K[K[K[K[K[K[K[K[K[K''f'i's'r'[1P'[1P'r's't'[C] = ''b'[1P'B'e't'a'
+ => "Beta" 
+2.0.0-p353 :017 > person2['first'] = 'Beta'[1P[1P[1P[1P[1P[1@l[1@a[1@s[1@t[C[C[C[C[C[C[C[C[C[C[C[C[1P'[1P'[1P'[1P'T'w'o'
+ => "Two" 
+2.0.0-p353 :018 > person2
+ => {"first"=>"Beta", "last"=>"Two"} 
+2.0.0-p353 :019 > 
+]0;samgooi4189@primeX: ~/dev/cs369/chapter4samgooi4189@primeX:~/dev/cs369/chapter4$ exit
+Script done, file is 4.6Exercise
+]0;samgooi4189@primeX: ~/dev/cs369/chapter4samgooi4189@primeX:~/dev/cs369/chapter4$ script 4.6Exercise
+Script started, file is 4.6Exercise
+]0;samgooi4189@primeX: ~/dev/cs369/chapter4samgooi4189@primeX:~/dev/cs369/chapter4$ rails c
+Loading development environment (Rails 4.0.2)
+2.0.0-p353 :001 > def sring[K[K[K[Ktring _[K[K_shuffle()s)
+2.0.0-p353 :002?>   s.split.[K()')')[C[C.shuffle.join
+2.0.0-p353 :003?>   end
+ => nil 
+2.0.0-p353 :004 > string_su[Khuffle()")")f")o")o")b")a")r")
+ => "oorfba" 
+2.0.0-p353 :005 > string_shuffle("foobar")[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[KC;a[K[Klass String
+NoMethodError: undefined method `Class' for main:Object
+	from (irb):5
+	from /home/samgooi4189/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/railties-4.0.2/lib/rails/commands/console.rb:90:in `start'
+	from /home/samgooi4189/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/railties-4.0.2/lib/rails/commands/console.rb:9:in `start'
+	from /home/samgooi4189/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/railties-4.0.2/lib/rails/commands.rb:62:in `<top (required)>'
+	from bin/rails:4:in `require'
+	from bin/rails:4:in `<main>'
+2.0.0-p353 :006 > Class String[C[1P[1@c
+2.0.0-p353 :007?>   def shuffle
+2.0.0-p353 :008?>     self.shu[K[K[Ksplit()')')[C.shuffle.join
+2.0.0-p353 :009?>     end
+2.0.0-p353 :010?>   end
+ => nil 
+2.0.0-p353 :011 > ""f"o"o"b"a"r"/"[1P"[C.shuffle
+ => "oabfro" 
+2.0.0-p353 :012 > person1 = {}:}f}i}r}s}t} }=}>}[1P}>} }"}"}A"}L"}a"}n"}[1P"}[1P"}[1P"}l"}a"}n"}[C,} }"}"}[1P}[1P}:}l}a}s}t} }=}?}[1P}>} }"}"}D}[C[1P}O"}n"}e"}
+ => {:first=>"Alan", :last=>"One"} 
+2.0.0-p353 :013 > person2 = {}:}f}i}r}s}t} }=} }[1P}>} }"}"}B"}E"}t"}a"}[1P"}[1P"}[1P"}a"}[1P"}e"}t"}a"}[C,} }:}l}a}s}t} }+}>}[1P}[1P}=}>} }"}"}T"}o"}w"}[1P"}[1P"}w"}o"}
+ => {:first=>"Beta", :last=>"Two"} 
+2.0.0-p353 :014 > person2 = {:first => "Beta", :last => "Two"}[1P[1@3[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[1P[1P[1P[1@C[1@h[1@a[1@r[1@l[1@i[1@e[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P"}[1P"}[1P"}T"}H"}r"}e"}e"}
+ => {:first=>"Charlie", :last=>"THree"} 
+2.0.0-p353 :015 > params = {}
+ => {} 
+2.0.0-p353 :016 > params[]:]f]a]t]h]e]r][C = person1
+ => {:first=>"Alan", :last=>"One"} 
+2.0.0-p353 :017 > params[:father] = person1[1P[1P[1P[1P[1P[1P[1@m[1@o[1@t[1@h[1@e[1@r
+ => {:first=>"Alan", :last=>"One"} 
+2.0.0-p353 :018 > params[:mother] = person1[C[C[C[C[C[C[C[K2
+ => {:first=>"Beta", :last=>"Two"} 
+2.0.0-p353 :019 > params[:mother] = person2[K3[1P[1P[1P[1P[1P[1P[1@c[1@h[1@i[1@l[1@d
+ => {:first=>"Charlie", :last=>"THree"} 
+2.0.0-p353 :020 > params[]:]f]a]t]h]e]r]
+ => {:first=>"Alan", :last=>"One"} 
+2.0.0-p353 :021 > params[:father][1P][1P][1P][1P][1P]a]t]h]e]r][C[]:]f]i]r]s]t]
+ => "Alan" 
+2.0.0-p353 :022 > 
+]0;samgooi4189@primeX: ~/dev/cs369/chapter4samgooi4189@primeX:~/dev/cs369/chapter4$ exit
+Script done, file is 4.6Exercise
+]0;samgooi4189@primeX: ~/dev/cs369/chapter4samgooi4189@primeX:~/dev/cs369/chapter4$ rm 4.6Exercise 
+]0;samgooi4189@primeX: ~/dev/cs369/chapter4samgooi4189@primeX:~/dev/cs369/chapter4$ ls
+[0m[01;34mapp[0m  [01;34mconfig[0m     [01;34mdb[0m       Gemfile_bckp  [01;34mlib[0m  outfile   output4.6  Rakefile   [01;34mspec[0m  [01;34mvendor[0m
+[01;34mbin[0m  config.ru  Gemfile  Gemfile.lock  [01;34mlog[0m  outfile2  [01;34mpublic[0m     README.md  [01;34mtmp[0m
+]0;samgooi4189@primeX: ~/dev/cs369/chapter4samgooi4189@primeX:~/dev/cs369/chapter4$ exit
+
+Script done on Tue 18 Feb 2014 01:20:51 AM CST

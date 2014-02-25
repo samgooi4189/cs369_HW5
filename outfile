@@ -1,0 +1,163 @@
+Script started on Mon 17 Feb 2014 11:08:48 PM CST
+]0;samgooi4189@primeX: ~/dev/cs369/chapter4samgooi4189@primeX:~/dev/cs369/chapter4$ rails console
+Loading development environment (Rails 4.0.2)
+2.0.0-p353 :001 > 17+[K + 42  #Integer addition
+ => 59 
+2.0.0-p353 :002 > 
+]0;samgooi4189@primeX: ~/dev/cs369/chapter4samgooi4189@primeX:~/dev/cs369/chapter4$ rails c
+Loading development environment (Rails 4.0.2)
+2.0.0-p353 :001 > ""  #An empty String[K[K[K[K[K[Kstring
+ => "" 
+2.0.0-p353 :002 > ""[Kfoo"  #[K#A nonempty string
+ => "foo" 
+2.0.0-p353 :003 > ""f"o"o"[C + ""a"[1P"b"a"r"[C  # [KString concatenation
+ => "foobar" 
+2.0.0-p353 :004 > first_name = ""M"i"c"h"a"e"l"[C  #Variable assignment
+ => "Michael" 
+2.0.0-p353 :005 > ""#"{"}"f}"i}"r}"s}"t}"_}"n}"a}"m}"e}"[C "H"a"r"t"l"[C  #String interpolation
+ => "Michael Hartl" 
+2.0.0-p353 :006 > first_name = ""M"i"c"h"a"e"l"
+ => "Michael" 
+2.0.0-p353 :007 > last_name = ""H"a"r"t"l"
+ => "Hartl" 
+2.0.0-p353 :008 > first_name + "" "[C + last_name
+ => "Michael Hartl" 
+2.0.0-p353 :009 > first_name + " " + last_name # Concatenation, with a spaec[K[Kce inbetween[K[K[K[K[K[K[K between
+ => "Michael Hartl" 
+2.0.0-p353 :010 > first_name + " " + last_name # Concatenation, with a space in between[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K""#"{"}"f}"i}"r}"s}"t}"_}"n}"a}"m}"e}"[C "#"{"}"l}"a}"s}"t}"_}"n}"a}"m}"e}"[C[C  #THe [K[K[Khe equa[Kivalent interpolaton[K[Kion
+ => "Michael Hartl" 
+2.0.0-p353 :011 > puts '"f"o"o"[1P"[1P"[1P"[1P"[C"f"o"o"[C  #put string
+foo
+ => nil 
+2.0.0-p353 :012 > print[K[K[K[K[Kprint ""f"o"o"[C  #print string ()s)a)m)e) )a)s) )p)u)t)s),) )b)u)t) )w)i)t)h)o)u)t) )t)h)e) )n)e)w)l)i)n)e)
+foo => nil 
+2.0.0-p353 :013 > print ::[C[K[K""f"o"o"/"n"[1P"[1P"\"[1P"\"n"[C  #Same as puts ""f"o"o"[C
+foo
+ => nil 
+2.0.0-p353 :014 > ''f'o'o'[C  #A Sinle[K[Kgle[K[K[K[K[K[Ksinge[Kle-quoted sr[Ktirng[K[K[K[Kring
+ => "foo" 
+2.0.0-p353 :015 > ''f'o'o'[C + ''b'a'r'
+ => "foobar" 
+2.0.0-p353 :016 > ''#'{'}'f}'o}'o}'[C 'b'a'r'[C  #Single-quoted strings don't allow interpolation
+ => "\#{foo} bar" 
+2.0.0-p353 :017 > ''\'n'[C  #Aliter[K[K[K[K[K litearl[K[K[Kral ''b'a'c'k'l'a's'h' 'n'[C combination
+ => "\\n" 
+2.0.0-p353 :018 > ''N'e'w'l'i'n'e's'[C '('0'[C[1P')'\'[1P'\)'n)'[C 'a'n'd' 't'a'b's' '(')'\)'t)'[C 'b't'[1P'o't'h' 'u's'e' 't'h'e' 'b'a'c'k's'l'a'h'[1P's'h' 'c'h'a'r'a'c't'e'r' '[1P' '\'.'
+ => "Newlines (\\n) and tabs (\\t) both use the backslash character \\." 
+2.0.0-p353 :019 > ""f"o"o"b"r"[1P"a"r"[C/[K.length  #Passing the ""l"e"n"g"t"h"[C message[K[Kge to a string
+ => 6 
+2.0.0-p353 :020 > ""f"o"o"b"a"r"[C.empty?
+ => false 
+2.0.0-p353 :021 > ??[K[K""D[K.empty?
+ => true 
+2.0.0-p353 :022 > s = ""D[Kf"o"o"b"a"r"[C
+ => "foobar" 
+2.0.0-p353 :023 > if() ()[C[C[K[Ks.is[K[Kempty?
+2.0.0-p353 :024?>   ""T"h"e" "s"t"r"i"n"g" "i"s" "e"m"p"t"y"[C
+2.0.0-p353 :025?>   e[Kelse
+2.0.0-p353 :026 >     ""T"h"e" "s"t"r"n"g"[1P"[1P"i"n"g" "i"s" "n"o"n"e"m"p"t"y"
+2.0.0-p353 :027?>   end
+ => "The string is nonempty" 
+2.0.0-p353 :028 > x = ""f"o"o"
+ => "foo" 
+2.0.0-p353 :029 > y = ""
+ => "" 
+2.0.0-p353 :030 > puts ""B"o"t"h" "s"t"r"i"n"g"d"s"[1P"[1P"s" "a"r"e" "e"m"p"t"y"[C if )[Kx.empty? && y.empty?
+ => nil 
+2.0.0-p353 :031 > puts ::[K[K""D[KO"n"e" "o"f" "t"h"e" "s"t"r"i"n"g"s" "i"s" "a"m"p"[1P"[1P"[1P"e"m"p"t"y"[C if x.empty? || y.empty?
+One of the strings is empty
+ => nil 
+2.0.0-p353 :032 > puts ""x" "i"s" "o"t" "e"m"p"t"y"[1@n[C[C[C[C[C[C[C[C[C if !x.empty?
+x is not empty
+ => nil 
+2.0.0-p353 :033 > nil.to_s
+ => "" 
+2.0.0-p353 :034 > nil.empty?
+NoMethodError: undefined method `empty?' for nil:NilClass
+	from (irb):34
+	from /home/samgooi4189/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/railties-4.0.2/lib/rails/commands/console.rb:90:in `start'
+	from /home/samgooi4189/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/railties-4.0.2/lib/rails/commands/console.rb:9:in `start'
+	from /home/samgooi4189/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/railties-4.0.2/lib/rails/commands.rb:62:in `<top (required)>'
+	from bin/rails:4:in `require'
+	from bin/rails:4:in `<main>'
+2.0.0-p353 :035 > nil.to_s.empty?  #Message chaining
+ => true 
+2.0.0-p353 :036 > ""f"o"o"[C.nil?
+ => false 
+2.0.0-p353 :037 > ""/[K.nil?
+ => false 
+2.0.0-p353 :038 > nil.nil?
+ => true 
+2.0.0-p353 :039 > puts ""x" "i"s" "n"o"t" "e"m"p"t"y"[C if !x.empty?[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Ksrin[K[K[Ktring = ""f"o"o"b"a"r"
+ => "foobar" 
+2.0.0-p353 :040 > puts ""T"h"e" "s"t"r"n"g"[1P"[1P"o"g" "[1P"[1P"[1P"i"n"g" "
+The string 
+ => nil 
+2.0.0-p353 :041 > 
+2.0.0-p353 :042 >   puts "The string "'"'"#'"{'"}'"s}'"t}'"r}'"n}'"g}'"[1P}'"[1P}'"i}'"n}'"g}'"[C[C "i"s" "n"o"n"e"m"p"t"y"."[C unless string.empty?
+The string 'foobar' is nonempty.
+ => nil 
+2.0.0-p353 :043 > if nil
+2.0.0-p353 :044?>   true
+2.0.0-p353 :045?>   eld[Kse
+2.0.0-p353 :046 >     false
+2.0.0-p353 :047?>   end
+ => false 
+2.0.0-p353 :048 > #[Kif nil [K
+2.0.0-p353 :049?>   true
+2.0.0-p353 :050?>   else
+2.0.0-p353 :051 >     fase [K[K[Klse   #nu[Kil is false
+2.0.0-p353 :052?>   end
+ => false 
+2.0.0-p353 :053 > if 0 
+2.0.0-p353 :054?>   true    # 0 ()a)n)d) )e)v)e)r)y)t)h)i)n)g) )o)t)h)e)r) )t)h)a)n) )n)i)l) )a)n)d) )a)[1P)f)a)l)s)e) )i)t)s)e)l)f) )[1P)[C ist [K[K true
+2.0.0-p353 :055?>   else
+2.0.0-p353 :056 >     false
+2.0.0-p353 :057?>   end
+ => true 
+2.0.0-p353 :058 > def string)[K_message()s)t)r)i)n)g)[C
+2.0.0-p353 :059?>   if string.empty?
+2.0.0-p353 :060?>     ''[K[K""I"t" "[1P";"s" "[1P"[1P"[1P"'"s" "a"n" "e"m"p"t"y" "s"t"r"i"n"g"!"[C
+2.0.0-p353 :061?>     else
+2.0.0-p353 :062 >       ""T"h"e" "s"t"r"n"[1P"i"n"g" "i"s" "n"o"n"e"m"p"t"y"."
+2.0.0-p353 :063?>     end
+2.0.0-p353 :064?>   end
+ => nil 
+2.0.0-p353 :065 > puts string_e[Kmea[Kssage()")")[C
+It's an empty string!
+ => nil 
+2.0.0-p353 :066 > puts string_message("")f")o")o")b")a")r")
+The string is nonempty.
+ => nil 
+2.0.0-p353 :067 > def string_mea[Kssage()s)t)r)i)n)g)[C
+2.0.0-p353 :068?>   return ""DIt[K[K[K[KIt's an empty string!" if string.empty?
+2.0.0-p353 :069?>   return ""T"h"e" "s"t"r"i"n"g" "i"s" "n"o"n"e"m"p"t"y"."[C
+2.0.0-p353 :070?>   end
+ => nil 
+2.0.0-p353 :071 > def strn[King-[K_message()t)h)e)_)f)n)u)[1P)[1P)u)n)c)t)i)o)n)_)a)r)g)u)m)e)n)t)[C
+2.0.0-p353 :072?>   if the_function_argument.empty?
+2.0.0-p353 :073?>     ""I"t";"s" "[1P"[1P"'"s"[1P"[1P"[1P"'"s" "a"n" "e"m"p"t"y" "s"t"r"i"n"g"!"[C
+2.0.0-p353 :074?>     else
+2.0.0-p353 :075 >       ""T"H"e" "[1P"[1P"[1P"h"e" "s"t"r"i"n"g" "i"s" "n"o"n"e"m"p"t"y"."
+2.0.0-p353 :076?>     end
+2.0.0-p353 :077?>   end
+ => nil 
+2.0.0-p353 :078 > put string_message()")")
+NoMethodError: undefined method `put' for main:Object
+	from (irb):78
+	from /home/samgooi4189/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/railties-4.0.2/lib/rails/commands/console.rb:90:in `start'
+	from /home/samgooi4189/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/railties-4.0.2/lib/rails/commands/console.rb:9:in `start'
+	from /home/samgooi4189/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/railties-4.0.2/lib/rails/commands.rb:62:in `<top (required)>'
+	from bin/rails:4:in `require'
+	from bin/rails:4:in `<main>'
+2.0.0-p353 :079 > put string_message("")s string_message("")
+It's an empty string!
+ => nil 
+2.0.0-p353 :080 > puts sring[K[K[K[Ktring_message()")")f")o")o")b")a")r")[C[C
+The string is nonempty.
+ => nil 
+2.0.0-p353 :081 > ^C
+2.0.0-p353 :081 > 
+]0;samgooi4189@primeX: ~/dev/cs369/chapter4samgooi4189@primeX:~/dev/cs369/chapter4$ exit
+
+Script done on Tue 18 Feb 2014 12:21:19 AM CST
