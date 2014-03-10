@@ -1,5 +1,6 @@
 # Ruby on Rails Tutorial: assignment for CS369
 This is the homework assignment for:
+* Chapter 5
 * Chapter 6
 * Chapter 7
 
