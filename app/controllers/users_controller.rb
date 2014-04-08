@@ -11,7 +11,6 @@ class UsersController < ApplicationController
   end
   
   def edit
-    @user = User.find(params[:id])
   end
 
   def update
@@ -23,7 +22,7 @@ class UsersController < ApplicationController
     end
   end
 
-   def def create
+  def create
     @user = User.new(user_params)
     if @user.save
       sign_in @user
