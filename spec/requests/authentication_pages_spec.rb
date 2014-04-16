@@ -47,7 +47,7 @@ describe "Authentication" do
 
     		describe "for non-signed-in users" do
       			let(:user) { FactoryGirl.create(:user) }
-
+			let(:new_user) { FactoryGirl.attributes_for(:user) }
 
 			describe "when attempting to visit a protected page" do
         			before do
@@ -76,6 +76,17 @@ describe "Authentication" do
               						expect(page).to have_title(user.name)
             					end
           				end
+
+
+					#describe "when using 'new' action" do
+					#	before { get new_user_path }
+        				#	specify { expect(response).to redirect_to(root_url) }
+					#end
+
+					#describe "when  using 'create' action" do
+					#	before { post users_path(user)}
+					#	specify { expect(response).to redirect_to(root_url) }
+					#end
         			end
       			end
 
