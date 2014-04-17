@@ -5,6 +5,7 @@ This is the homework assignment for:
 * Chapter 7
 * Chapter 8
 * Chapter 9
+* Chapter 10
 
 This is the sample application for
 the [*Ruby on Rails Tutorial*](http://railstutorial.org/)
