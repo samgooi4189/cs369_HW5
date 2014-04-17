@@ -31,6 +31,11 @@ describe "Static pages" do
           expect(page).to have_selector("li##{item.id}", text: item.content)
         end
       end
+
+      it "should have the correct microposts count and pluralization" do
+        expect(page).to have_selector('section h1', text: user.name)
+        expect(page).to have_selector('section span', text: ActionController::Base.helpers.pluralize(user.microposts.count.to_s, "micropost"))
+      end
     end
   end
 
