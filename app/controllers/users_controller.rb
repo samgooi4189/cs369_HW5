@@ -15,16 +15,25 @@ class UsersController < ApplicationController
   end
 
   def new
-    @user = User.new
+    if signed_in?
+       redirect_to root_url
+    else
+      @user = User.new
+    end
   end
   
   def edit
   end
 
   def destroy
-    User.find(params[:id]).destroy
-    flash[:success] = "User deleted."
-    redirect_to users_url
+    @user = User.find(params[:id])
+    if current_user?(@user)
+      redirect_to users_url, notice: "You can't delete yourself."
+    else
+      @user.destroy
+      flash[:success] = "User deleted."
+      redirect_to users_url
+    end
   end
 
   def update
@@ -37,6 +46,9 @@ class UsersController < ApplicationController
   end
 
   def create
+    if signed_in?
+      redirect_to root_url
+    end
     @user = User.new(user_params)
     if @user.save
       sign_in @user

@@ -78,15 +78,21 @@ describe "Authentication" do
           				end
 
 
-					#describe "when using 'new' action" do
-					#	before { get new_user_path }
-        				#	specify { expect(response).to redirect_to(root_url) }
-					#end
+					describe "when using 'new' action" do
+						before { visit new_user_path }
 
-					#describe "when  using 'create' action" do
-					#	before { post users_path(user)}
-					#	specify { expect(response).to redirect_to(root_url) }
-					#end
+						it "should redirect to root page" do
+        						expect(page).to have_title("Sample App")
+						end
+					end
+
+					describe "when  using 'create' action" do
+						let(:test_user) { FactoryGirl.create(:user) }
+						before { visit users_path(test_user)}
+						it "should redirect to root page" do
+							expect(page).to have_title("Sample App")
+						end
+					end
         			end
       			end
 
