@@ -26,6 +26,14 @@ describe Relationship do
     before { relationship.follower_id = nil }
     it { should_not be_valid }
   end
+
+  describe "relationship associations" do
+    subject { followed }
+    before { follower.destroy }
+
+    its(:relationships) { should_not include(follower) }
+    its(:reverse_relationships) { should_not include(follower) }
+  end
 end
 
 
